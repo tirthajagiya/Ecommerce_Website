@@ -2,9 +2,6 @@ import mongoose from "mongoose";
 
 const wishlistSchema = new mongoose.Schema(
   {
-    wishlistId: {
-      type: String,
-    },
     userId: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",

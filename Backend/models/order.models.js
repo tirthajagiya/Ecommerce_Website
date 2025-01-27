@@ -3,12 +3,6 @@ import addressSchema from User
 
 const orderSchema = new mongoose.Schema(
   {
-    orderId: {
-      type: String,
-      required: true,
-      unique: true,
-      trim: true,
-    },
     userId: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",

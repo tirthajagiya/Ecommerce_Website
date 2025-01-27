@@ -1,4 +1,4 @@
-import mongoose, { Mongoose } from "mongoose";
+import mongoose from "mongoose";
 
 const addressSchema = new mongoose.model({
   street: { type: String, require: true, trim: true },
@@ -8,11 +8,11 @@ const addressSchema = new mongoose.model({
 });
 
 const userSchema = new mongoose.Schema({
-  userId: {
-    type: Number,
-    required: true,
-    unique: true,
-  },
+  // userId: {
+  //   type: Number,
+  //   required: true,
+  //   unique: true,
+  // },
   username: {
     type: String,
     required: true,
@@ -32,6 +32,7 @@ const userSchema = new mongoose.Schema({
   phone: {
     type: String,
     require: true,
+    //pending
   },
   address: addressSchema,
   userType: {
