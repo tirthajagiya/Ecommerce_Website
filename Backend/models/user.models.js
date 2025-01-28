@@ -7,50 +7,50 @@ const addressSchema = new mongoose.model({
   country: { type: String, require: true, trim: true },
 });
 
-const userSchema = new mongoose.Schema({
-  // userId: {
-  //   type: Number,
-  //   required: true,
-  //   unique: true,
-  // },
-  username: {
-    type: String,
-    required: true,
-    trim: true,
-  },
-  email: {
-    type: String,
-    required: true,
-    lowercase: true,
-    unique: true,
-  },
-  password: {
-    type: String,
-    required: true,
-    minlength: 6,
-  },
-  phone: {
-    type: String,
-    require: true,
-    //pending
-  },
-  address: addressSchema,
-  userType: {
-    type: String,
-    require: true,
-    enum: ["Admin", "Customer"],
-    default: "Customer",
-  },
-  cart: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "Cart",
-  },
-  orderList: [
-    {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "Order",
+const userSchema = new mongoose.Schema(
+  {
+    username: {
+      type: String,
+      required: true,
+      trim: true,
     },
-  ],
-},{timestamps:true});
+    email: {
+      type: String,
+      required: true,
+      lowercase: true,
+      unique: true,
+    },
+    password: {
+      type: String,
+      required: true,
+      minlength: 8,
+      maxlength:16,
+    },
+    phone: {
+      type: String,
+      require: true,
+      length:10
+      //pending
+    },
+    address: addressSchema,
+    userType: {
+      type: String,
+      require: true,
+      enum: ["Admin", "Customer"],
+      default: "Customer",
+    },
+    cartId: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Cart",
+    },
+    orderListId: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Order",
+      },
+    ],
+  },
+  { timestamps: true }
+);
 
 export const User = mongoose.model("User", userSchema);

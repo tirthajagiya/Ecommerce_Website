@@ -4,10 +4,12 @@ const productSchema = new mongoose.Schema({
   productname: {
     type: String,
     required: String,
+    maxlength:20
   },
   description: {
     type: String,
     required: true,
+    maxlength:200
   },
   category: {
     type: mongoose.Schema.Types.ObjectId,
@@ -21,10 +23,12 @@ const productSchema = new mongoose.Schema({
   discount: {
     type: Number,
     default: 0,
+    max:100
   },
   stock: {
     type: Number,
     required: true,
+    min:0
   },
   images: [
     {
@@ -33,18 +37,18 @@ const productSchema = new mongoose.Schema({
   ],
   rating: [
     {
-      user: {
-        type: mongoose.Schema.model.ObjectId,
+      userId: {
+        type: mongoose.Schema.Types.ObjectId,
         ref: "User",
       },
       rate: {
         type: Number,
-        min: 1,
-        max: 5,
+        enum:[1,2,3,4,5],
       },
       review:{
         type:String,
         trim:true,
+        max:200,
       }
     },
   ],
