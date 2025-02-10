@@ -20,23 +20,26 @@ const userSchema = new mongoose.Schema(
       lowercase: true,
       unique: true,
     },
+    image: {
+      type: String,
+    },
     password: {
       type: String,
       required: true,
       minlength: 8,
-      maxlength:16,
+      maxlength: 16,
     },
     phone: {
       type: String,
       require: true,
-      length:10
+      length: 10,
       //pending
     },
     address: addressSchema,
     userType: {
       type: String,
       require: true,
-      enum: ["Admin", "Customer"],
+      enum: ["Admin", "Shopkeeper", "Customer"],
       default: "Customer",
     },
     cartId: {
