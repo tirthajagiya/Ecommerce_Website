@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #e1e1e1;
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.login-header h1 {
+    color: #212529;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.login-header .accent-bar {
+    height: 5px;
+    width: 80px;
+    margin: 0 auto;
+    background-color: #6bb252;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #212529;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e1e1e1;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #6bb252;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.remember-me input {
+    margin-right: 0.5rem;
+}
+
+.remember-me label {
+    color: #212529;
+}
+
+.login-btn {
+    width: 100%;
+    background-color: #6bb252;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #5a9b45;
+}
+
+.forgot-password {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.forgot-password a {
+    color: #6bb252;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.login-footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e1e1e1;
+}
+
+.signup-link {
+    color: #212529;
+}
+
+.signup-link a {
+    color: #f9d56b;
+    font-weight: 600;
+    text-decoration: none;
+    text-shadow: 0px 0px 1px rgba(0,0,0,0.2);
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}

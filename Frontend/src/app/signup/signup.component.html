@@ -1,1 +1,67 @@
-<p>signup works!</p>
+<div class="signup-container">
+    <div class="signup-header">
+        <h1>Sign Up</h1>
+        <div class="accent-bar"></div>
+    </div>
+    
+    <form action="#" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required placeholder="Choose a username">
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+        </div>
+        
+        <div class="image-upload">
+            <label>Profile Image</label>
+            <div class="image-upload-preview">
+                <img src="/api/placeholder/100/100" alt="Profile Preview">
+            </div>
+            <label for="profile-image" class="custom-file-upload">
+                Choose Image
+            </label>
+            <input type="file" id="profile-image" name="profile-image" accept="image/*">
+        </div>
+        
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required placeholder="Create a password">
+        </div>
+        
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+        </div>
+        
+        <div class="form-group">
+            <label for="address1">Address Line 1</label>
+            <input type="text" id="address1" name="address1" required placeholder="Street address">
+        </div>
+        
+        <div class="form-group">
+            <label for="address2">Address Line 2</label>
+            <input type="text" id="address2" name="address2" placeholder="Apartment, suite, unit, etc. (optional)">
+        </div>
+        
+        <div class="form-row">
+            <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" required placeholder="City">
+            </div>
+            
+            <div class="form-group">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" required placeholder="State">
+            </div>
+        </div>
+        
+        <button type="submit" class="signup-btn">Sign Up</button>
+    </form>
+    
+    <div class="signup-footer">
+        <p class="login-link">Already have an account? <a href="#">Log in</a></p>
+    </div>
+</div>

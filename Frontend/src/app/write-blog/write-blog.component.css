@@ -1,0 +1,111 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #6bb252;
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #fbd870;
+    padding-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #6bb252;
+}
+
+input[type="text"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #6bb252;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.image-upload {
+    border: 2px dashed #6bb252;
+    padding: 20px;
+    text-align: center;
+    border-radius: 4px;
+    background-color: rgba(251, 216, 112, 0.2);
+    cursor: pointer;
+}
+
+.image-preview {
+    width: 100%;
+    height: 200px;
+    margin-top: 10px;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.image-preview img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+button {
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cancel-button {
+    background-color: #6bb252;
+    color: white;
+}
+
+.cancel-button:hover {
+    background-color: #5a9644;
+}
+
+.submit-button {
+    background-color: #fbd870;
+    color: #333;
+}
+
+.submit-button:hover {
+    background-color: #f8cc45;
+}

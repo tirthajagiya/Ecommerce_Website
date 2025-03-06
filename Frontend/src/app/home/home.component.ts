@@ -14,10 +14,11 @@ import { DownloadSectionComponent } from "../download-section/download-section.c
 import { PeopleLookingComponent } from "../people-looking/people-looking.component";
 import { FeaturesComponent } from "../features/features.component";
 import { FooterComponent } from "../footer/footer.component";
+import { CategoryDisplayComponent } from "../category-display/category-display.component";
 
 @Component({
   selector: 'app-home',
-  imports: [PreloaderComponent, HeaderComponent, IntroductionPartComponent, CategoryComponent, BestSellingProductComponent, ProductImageComponent, FeaturedProductComponent, DiscountSectionComponent, PopulerProductComponent, JustArrivedComponent, RecentBlogComponent, DownloadSectionComponent, PeopleLookingComponent, FeaturesComponent, FooterComponent],
+  imports: [PreloaderComponent, HeaderComponent, IntroductionPartComponent, CategoryComponent, BestSellingProductComponent, ProductImageComponent, FeaturedProductComponent, DiscountSectionComponent, PopulerProductComponent, JustArrivedComponent, RecentBlogComponent, DownloadSectionComponent, PeopleLookingComponent, FeaturesComponent, FooterComponent, CategoryDisplayComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

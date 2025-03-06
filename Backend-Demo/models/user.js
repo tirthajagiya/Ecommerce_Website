@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+const mongoose = require('mongoose')
 
 const addressSchema = new mongoose.Schema({
   address_line_1: { type: String, require: true, trim: true },
@@ -56,4 +56,4 @@ const userSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-export const User = mongoose.model("User", userSchema);
+module.exports = mongoose.model("User", userSchema);

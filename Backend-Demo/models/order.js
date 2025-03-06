@@ -1,5 +1,5 @@
-import mongoose from "mongoose";
-import addressSchema from User
+const mongoose = require('mongoose')
+const addressSchema = require('User');
 
 const orderSchema = new mongoose.Schema(
   {
@@ -37,4 +37,4 @@ const orderSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-export const Order = mongoose.model("Order", orderSchema);
+module.exports = mongoose.model("Order", orderSchema);

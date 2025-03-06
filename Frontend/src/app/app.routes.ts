@@ -7,6 +7,8 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { CartComponent } from './cart/cart.component';
 import { WishlistComponent } from './wishlist/wishlist.component';
+import { BlogComponent } from './blog/blog.component';
+import { WriteBlogComponent } from './write-blog/write-blog.component';
 
 export const routes: Routes = [
     {
@@ -18,27 +20,35 @@ export const routes: Routes = [
         component: AboutComponent
     },
     {
-        path:"contact",
-        component:ContactComponent
+        path: "blog",
+        component: BlogComponent
     },
     {
-        path:"category",
-        component:CategoryComponent
+        path: "contact",
+        component: ContactComponent
     },
     {
-        path:"login",
-        component:LoginComponent
+        path: "category",
+        component: CategoryComponent
     },
     {
-        path:"signup",
-        component:SignupComponent
+        path: "login",
+        component: LoginComponent
     },
     {
-        path:"cart",
-        component:CartComponent
+        path: "signup",
+        component: SignupComponent
     },
     {
-        path:"wishlist",
-        component:WishlistComponent
+        path: "cart",
+        component: CartComponent
+    },
+    {
+        path: "wishlist",
+        component: WishlistComponent
+    },
+    {
+        path: "write-blog",
+        component: WriteBlogComponent
     }
 ];
