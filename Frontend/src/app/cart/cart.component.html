@@ -1,1 +1,63 @@
-<p>cart works!</p>
+<div class="container">
+    <h1>Your Shopping Cart</h1>
+    <div class="cart">
+        <div class="cart-header">
+            <div>Product</div>
+            <div>Quantity</div>
+            <div>Price</div>
+            <div>Total</div>
+            <div></div>
+        </div>
+        
+        <!-- Cart Item 1 -->
+        <div class="cart-item">
+            <div class="product-name">Organic Cotton T-Shirt</div>
+            <div class="quantity">
+                <button>-</button>
+                <input type="number" min="1" value="2">
+                <button>+</button>
+            </div>
+            <div class="price">$29.99</div>
+            <div class="item-total">$59.98</div>
+            <div>
+                <button class="remove-btn">Remove</button>
+            </div>
+        </div>
+        
+        <!-- Cart Item 2 -->
+        <div class="cart-item">
+            <div class="product-name">Recycled Denim Jeans</div>
+            <div class="quantity">
+                <button>-</button>
+                <input type="number" min="1" value="1">
+                <button>+</button>
+            </div>
+            <div class="price">$59.99</div>
+            <div class="item-total">$59.99</div>
+            <div>
+                <button class="remove-btn">Remove</button>
+            </div>
+        </div>
+        
+        <!-- Cart Item 3 -->
+        <div class="cart-item">
+            <div class="product-name">Bamboo Water Bottle</div>
+            <div class="quantity">
+                <button>-</button>
+                <input type="number" min="1" value="3">
+                <button>+</button>
+            </div>
+            <div class="price">$24.99</div>
+            <div class="item-total">$74.97</div>
+            <div>
+                <button class="remove-btn">Remove</button>
+            </div>
+        </div>
+        
+        <div class="cart-summary">
+            <span class="total-label">Total:</span>
+            <span class="cart-total">$194.94</span>
+        </div>
+    </div>
+    <button class="checkout-btn">Proceed to Checkout</button>
+</div>

@@ -1,11 +1,4 @@
-const mongoose = require('mongoose')
-
-const addressSchema = new mongoose.Schema({
-  address_line_1: { type: String, require: true, trim: true },
-  address_line_2: { type: String, require: false, trim: true },
-  city: { type: String, require: true, trim: true },
-  state: { type: String, require: true, trim: true },
-});
+const mongoose = require("mongoose");
 
 const userSchema = new mongoose.Schema(
   {
@@ -35,7 +28,12 @@ const userSchema = new mongoose.Schema(
       length: 10,
       //pending
     },
-    address: addressSchema,
+    address: {
+      address_line_1: { type: String, require: true, trim: true },
+      address_line_2: { type: String, require: false, trim: true },
+      city: { type: String, require: true, trim: true },
+      state: { type: String, require: true, trim: true },
+    },
     userType: {
       type: String,
       require: true,
@@ -45,6 +43,7 @@ const userSchema = new mongoose.Schema(
     cartId: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "Cart",
+      default:null
     },
     orderListId: [
       {

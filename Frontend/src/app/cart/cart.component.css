@@ -1,0 +1,103 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.cart {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.cart-header {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+    padding: 15px 20px;
+    background-color: #f9d266;
+    font-weight: bold;
+    color: #333;
+}
+.cart-item {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    align-items: center;
+}
+.cart-item:last-child {
+    border-bottom: none;
+}
+.product-name {
+    font-weight: 500;
+}
+.quantity {
+    display: flex;
+    align-items: center;
+}
+.quantity button {
+    width: 30px;
+    height: 30px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.quantity input {
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    margin: 0 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.price, .item-total {
+    font-weight: 500;
+}
+.remove-btn {
+    background-color: #6bb252;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.cart-summary {
+    background-color: #f9f9f9;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #f9d266;
+}
+.total-label {
+    font-size: 18px;
+    font-weight: bold;
+}
+.cart-total {
+    font-size: 18px;
+    font-weight: bold;
+    color: #6bb252;
+}
+.checkout-btn {
+    display: block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #6bb252;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}

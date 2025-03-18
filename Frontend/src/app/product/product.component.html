@@ -1,0 +1,48 @@
+<div class="container">
+    <h1>Product List</h1>
+
+    <!-- <div class="filters">
+        <select>
+            <option>All Categories</option>
+            <option>Electronics</option>
+            <option>Clothing</option>
+            <option>Furniture</option>
+            <option>Books</option>
+        </select>
+
+        <select>
+            <option>Sort by: Default</option>
+            <option>Price: Low to High</option>
+            <option>Price: High to Low</option>
+            <option>Name: A to Z</option>
+            <option>Name: Z to A</option>
+        </select>
+
+        <input type="text" placeholder="Search products...">
+
+        <button>Apply Filters</button>
+    </div> -->
+
+    <div class="product-list">
+        <div class="product-card" *ngFor="let product of data;let i = index" (click)="goToProduct(product._id)">
+            <img src={{product.image}} alt={{product.productName}} class="product-image">
+            <div class="discount-badge">{{product.discount}}% OFF</div>
+            <div class="product-info">
+                <h3 class="product-name">{{product.productName}}</h3>
+                <span class="product-category">Electronics</span>
+                <div class="price-container">
+                    <span class="current-price">${{product.price}}</span>
+                    <span class="original-price">${{product.price + (product.price/product.discount)}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="pagination">
+        <button>1</button>
+        <button class="active">2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+    </div> -->
+</div>

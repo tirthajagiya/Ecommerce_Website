@@ -1,6 +1,5 @@
-const mongoose = require('mongoose')
-const addressSchema = require('User');
-
+const mongoose = require("mongoose");
+  
 const orderSchema = new mongoose.Schema(
   {
     userId: {
@@ -32,7 +31,12 @@ const orderSchema = new mongoose.Schema(
       enum: ["Pending", "Cancelled", "Deliverd", "Processing"],
       default: "Pending",
     },
-    shippingAddress: addressSchema,
+    shippingAddress: {
+      address_line_1: { type: String, require: true, trim: true },
+      address_line_2: { type: String, require: false, trim: true },
+      city: { type: String, require: true, trim: true },
+      state: { type: String, require: true, trim: true },
+    },
   },
   { timestamps: true }
 );

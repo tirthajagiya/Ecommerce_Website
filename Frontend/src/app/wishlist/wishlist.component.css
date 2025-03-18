@@ -1,0 +1,122 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.wishlist {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.wishlist-header {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    padding: 15px 20px;
+    background-color: #f9d266;
+    font-weight: bold;
+    color: #333;
+}
+.wishlist-item {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    align-items: center;
+}
+.wishlist-item:last-child {
+    border-bottom: none;
+}
+.product-name {
+    font-weight: 500;
+}
+.price {
+    font-weight: 500;
+}
+.status {
+    color: #666;
+    font-style: italic;
+}
+.status.in-stock {
+    color: #6bb252;
+    font-weight: 500;
+    font-style: normal;
+}
+.action-btns {
+    display: flex;
+    gap: 10px;
+}
+.add-cart-btn {
+    background-color: #6bb252;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.remove-btn {
+    background-color: #f2f2f2;
+    color: #333;
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.empty-wishlist {
+    text-align: center;
+    padding: 40px 20px;
+    color: #888;
+}
+.empty-wishlist p {
+    margin-bottom: 20px;
+}
+.shop-now-btn {
+    background-color: #6bb252;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+.wishlist-footer {
+    padding: 15px 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #f9d266;
+}
+.move-all-btn {
+    background-color: #6bb252;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.navigation-links {
+    text-align: center;
+    margin-top: 20px;
+}
+.navigation-links a {
+    color: #6bb252;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.navigation-links a:hover {
+    text-decoration: underline;
+}

@@ -4,63 +4,12 @@
 </div>
 
 <div class="categories-container">
-    <!-- Category 1 -->
-    <div class="category-card">
+    <div class="category-card" *ngFor="let category of data">
         <div class="category-image">
-            <img src="/api/placeholder/300/180" alt="Electronics">
+            <img src={{category.image}} alt={{category.categoryName}}>
         </div>
         <div class="category-name">
-            <h3>Electronics</h3>
-        </div>
-    </div>
-    
-    <!-- Category 2 -->
-    <div class="category-card">
-        <div class="category-image">
-            <img src="/api/placeholder/300/180" alt="Fashion">
-        </div>
-        <div class="category-name">
-            <h3>Fashion</h3>
-        </div>
-    </div>
-    
-    <!-- Category 3 -->
-    <div class="category-card">
-        <div class="category-image">
-            <img src="/api/placeholder/300/180" alt="Home & Kitchen">
-        </div>
-        <div class="category-name">
-            <h3>Home & Kitchen</h3>
-        </div>
-    </div>
-    
-    <!-- Category 4 -->
-    <div class="category-card">
-        <div class="category-image">
-            <img src="/api/placeholder/300/180" alt="Books">
-        </div>
-        <div class="category-name">
-            <h3>Books</h3>
-        </div>
-    </div>
-    
-    <!-- Category 5 -->
-    <div class="category-card">
-        <div class="category-image">
-            <img src="/api/placeholder/300/180" alt="Sports & Outdoors">
-        </div>
-        <div class="category-name">
-            <h3>Sports & Outdoors</h3>
-        </div>
-    </div>
-    
-    <!-- Category 6 -->
-    <div class="category-card">
-        <div class="category-image">
-            <img src="/api/placeholder/300/180" alt="Toys & Games">
-        </div>
-        <div class="category-name">
-            <h3>Toys & Games</h3>
+            <h3>{{category.categoryName}}</h3>
         </div>
     </div>
 </div>

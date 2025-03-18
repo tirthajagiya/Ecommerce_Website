@@ -1,0 +1,50 @@
+<div class="container">
+    <div class="product-container">
+        <div class="product-gallery">
+            <img src={{data.image}} alt="Wireless Headphones" class="product-main-image">
+            <div class="product-thumbnails">
+                <!-- <img src="/api/placeholder/80/80" alt="Thumbnail 1" class="product-thumbnail active">
+                <img src="/api/placeholder/80/80" alt="Thumbnail 2" class="product-thumbnail">
+                <img src="/api/placeholder/80/80" alt="Thumbnail 3" class="product-thumbnail">
+                <img src="/api/placeholder/80/80" alt="Thumbnail 4" class="product-thumbnail"> -->
+            </div>
+        </div>
+        
+        <div class="product-info">
+            <div class="product-category">Electronics</div>
+            <h1 class="product-name">{{data.productName}}</h1>
+            
+            <div class="product-rating">
+                <div class="stars">★★★★☆</div>
+                <div class="rating-count">(324 reviews)</div>
+            </div>
+            
+            <div class="product-owner">
+                <img src="/api/placeholder/40/40" alt="Owner Avatar" class="owner-avatar">
+                <div>
+                    <div class="owner-name">Admin</div>
+                    <div class="owner-info">Verified Seller • Since 2018</div>
+                </div>
+            </div>
+            
+            <div class="product-price-container">
+                <div class="product-price">${{data.price}}</div>
+                <div class="product-original-price">${{data.price+(data.price/data.discount)}}</div>
+                <div class="product-discount">{{data.discount}}% OFF</div>
+            </div>
+            
+            <div class="product-stock">Only {{data.stock}} products left!</div>
+            
+            <p class="product-description">
+                {{data.description}}
+            </p>
+            
+            <div class="divider"></div>
+            
+            <div class="product-actions">
+                <button class="btn btn-primary">Add to Cart</button>
+                <button class="btn btn-secondary">♡ Wishlist</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -4,30 +4,30 @@
         <div class="accent-bar"></div>
     </div>
     
-    <form action="#" method="post">
+    <form [formGroup]="loginForm" (ngSubmit)="submitForm()" method="post">
         <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" required placeholder="Enter your email">
+            <input type="email" id="email" name="email" formControlName="email" required placeholder="Enter your email">
         </div>
         
         <div class="form-group">
             <label for="password">Password</label>
-            <input type="password" id="password" name="password" required placeholder="Enter your password">
+            <input type="password" id="password" formControlName="password" name="password" required placeholder="Enter your password">
         </div>
         
-        <div class="remember-me">
-            <input type="checkbox" id="remember" name="remember">
+        <!-- <div class="remember-me">
+            <input type="checkbox" id="remember" formControlName="password" name="remember">
             <label for="remember">Remember me</label>
-        </div>
+        </div> -->
         
         <button type="submit" class="login-btn">Log In</button>
-        
+<!--         
         <div class="forgot-password">
             <a href="#">Forgot password?</a>
-        </div>
+        </div> -->
     </form>
     
     <div class="login-footer">
-        <p class="signup-link">Don't have an account? <a href="#">Sign up</a></p>
+        <p class="signup-link">Don't have an account? <a routerLink="../signup">Sign up</a></p>
     </div>
 </div>
